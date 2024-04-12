@@ -17,6 +17,12 @@ namespace CSBasic
             int a = 2000000000; //20억
             int b = 1000000000; // 10억
             Console.WriteLine(a + b);
+
+            // 오버플로우 연습2
+            // 다른 타입끼리 연산을 할 때 더 큰 연산의 타입을 따라간다. 
+            Console.WriteLine((long)a + b); // => long a + long b
+            Console.WriteLine(a + (long)b);
+            Console.WriteLine((long)a + (long)b);
         }
     }
 }
