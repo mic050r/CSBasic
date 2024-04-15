@@ -113,6 +113,40 @@ namespace CSBasic
             Console.WriteLine(bool.Parse("true")); // True
             Console.WriteLine(bool.Parse("False")); // False
             Console.WriteLine(bool.Parse("false")); // False
+
+            // 현재 날짜와 시간 가져오기
+            DateTime now = DateTime.Now;
+
+            // 시간에 따른 인사말 출력하기
+            if (now.Hour < 12)
+            {
+                Console.WriteLine("좋은 아침입니다!");
+            }
+            else
+            {
+                if (now.Hour < 18)
+                {
+                    Console.WriteLine("좋은 오후입니다!");
+                }
+                else
+                {
+                    Console.WriteLine("좋은 저녁입니다!");
+                }
+            }
+
+            // 또는 if-else if 문을 사용하여 조건을 중첩 가능
+            if (now.Hour < 12)
+            {
+                Console.WriteLine("아침입니다.");
+            }
+            else if (now.Hour < 18)
+            {
+                Console.WriteLine("오후입니다.");
+            }
+            else
+            {
+                Console.WriteLine("저녁입니다.");
+            }
         }
     }
 }
