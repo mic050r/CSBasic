@@ -75,6 +75,13 @@ namespace CSBasic
             Console.WriteLine("number의 자료형: " + num.GetType()); // System.Int32
             Console.WriteLine("message의 자료형: " + message.GetType()); // System.String
             Console.WriteLine("pi의 자료형: " + pi.GetType()); // System.Double
+
+            // 사용자로부터 문자열 입력 받기
+            Console.WriteLine("이름을 입력하세요:");
+            string name = Console.ReadLine();
+
+            // 입력받은 이름 출력하기
+            Console.WriteLine("안녕하세요, " + name + "님!");
         }
     }
 }
