@@ -63,7 +63,7 @@ namespace CSBasic
             Console.WriteLine("_string의 자료형: " + _string.GetType());
             Console.WriteLine("_char의 자료형: " + _char.GetType());
             Console.WriteLine("_double의 자료형: " + _double.GetType());
-            
+
             Console.WriteLine((323).GetType());
 
             // var 키워드를 사용하여 변수를 선언할 때 컴파일러가 자료형을 추론
@@ -82,6 +82,37 @@ namespace CSBasic
 
             // 입력받은 이름 출력하기
             Console.WriteLine("안녕하세요, " + name + "님!");
+
+            // 자동 자료형(automatically/Implicit Type Casting) 변환 => 암시적 형변환
+            int numInt = 10;
+            double numDouble = numInt; // int를 double로 암시적으로 변환
+            Console.WriteLine("암시적 형변환: " + numDouble); // 출력: 10.0
+
+            // 강제 자료형 변환(force/manually/Explicit type casting) => 명시적 형변환
+            double num1 = 10.5;
+            int num2 = (int)num1; // double을 int로 명시적으로 변환
+            Console.WriteLine("명시적 형변환: " + num2); // 출력: 10
+
+            // Parse 메서드를 이용한 변환
+            string strNumber = "100";
+            int parsedNumber = int.Parse(strNumber); // 문자열을 int로 변환
+            Console.WriteLine("Parse 메서드를 이용한 변환: " + parsedNumber); // 출력: 100
+
+            // ToString()메서드를 이용한 변환
+            Console.WriteLine((52.273).ToString()); // 52.273
+            Console.WriteLine((52.273).ToString("0.00")); // 52.27
+            Console.WriteLine((52.273).ToString("0.00000")); // 52.27300
+
+            // 숫자와 문자열 덧셈
+            Console.WriteLine(52 + 273); // 325
+            Console.WriteLine("52" + 273); // 52273
+            Console.WriteLine(52 + "273"); // 52273
+
+            // 다른 자료형을 불로 변환
+            Console.WriteLine(bool.Parse("True"));// True
+            Console.WriteLine(bool.Parse("true")); // True
+            Console.WriteLine(bool.Parse("False")); // False
+            Console.WriteLine(bool.Parse("false")); // False
         }
     }
 }
