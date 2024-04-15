@@ -65,7 +65,16 @@ namespace CSBasic
             Console.WriteLine("_double의 자료형: " + _double.GetType());
             
             Console.WriteLine((323).GetType());
-        
+
+            // var 키워드를 사용하여 변수를 선언할 때 컴파일러가 자료형을 추론
+            // 한 번 지정된 자료형은 계속 유지
+            var num = 10;
+            var message = "Hello, world!";
+            var pi = 3.14;
+
+            Console.WriteLine("number의 자료형: " + num.GetType()); // System.Int32
+            Console.WriteLine("message의 자료형: " + message.GetType()); // System.String
+            Console.WriteLine("pi의 자료형: " + pi.GetType()); // System.Double
         }
     }
 }
