@@ -37,6 +37,16 @@ namespace CSBasic
             Console.WriteLine("double : " + sizeof(double));
             Console.WriteLine("char : " + sizeof(char));
             Console.WriteLine("bool : " + sizeof(bool));
+
+            // 중감연산자 연습 
+            int number = 10;
+            number++;
+            Console.WriteLine(number);
+            number--;
+            Console.WriteLine(number);
+            Console.WriteLine(--number);
+            Console.WriteLine(number++);
+            number += 1;
         }
     }
 }
