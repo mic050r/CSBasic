@@ -47,6 +47,25 @@ namespace CSBasic
             Console.WriteLine(--number);
             Console.WriteLine(number++);
             number += 1;
+
+            // 자료형 검사
+            int _int = 273;
+            long _long = 274889488883;
+            float _float = 52.273F;
+            string _string = "Hello";
+            char _char = 'A';
+            double _double = 3.14;
+
+            // 각 변수의 자료형을 출력
+            Console.WriteLine("_int의 자료형: " + _int.GetType());
+            Console.WriteLine("_long의 자료형: " + _long.GetType());
+            Console.WriteLine("_float의 자료형: " + _float.GetType());
+            Console.WriteLine("_string의 자료형: " + _string.GetType());
+            Console.WriteLine("_char의 자료형: " + _char.GetType());
+            Console.WriteLine("_double의 자료형: " + _double.GetType());
+            
+            Console.WriteLine((323).GetType());
+        
         }
     }
 }
